@@ -1,0 +1,24 @@
+name: CI production workflow
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+        - name: Checkout code
+          uses: actions/checkout@v2  # Checkout the repository's code
+    
+        - name: Deploy README to GitHub Pages
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub access token to authenticate the deployment
+            publish_dir: .   # Directory containing the file(s) to be deployed (in this case, the root directory)    
