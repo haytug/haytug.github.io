@@ -7,7 +7,10 @@
 - M.A., Economics | University of California - Santa Cruz, CA, USA (2010)
 - B.A., Economics | Marmara University, Istanbul, Turkey (2007)
 
-## Work Experience
+## Work Experience 
+
+[Download my full resume] (https://github.com/haytug/haytug.github.io/blob/main/harryaytug_resume_2024.pdf)
+
 **Data Scientist @ Instabox, Sweden (May 2022 - Present)**
 - Led the development and deployment of machine learning forecasting models using Python, Docker, Kubernetes, Terraform, SQL,
 and Snowflake.
