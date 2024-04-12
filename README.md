@@ -9,7 +9,7 @@
 
 ## Work Experience 
 
-[Download my full resume] (https://github.com/haytug/haytug.github.io/blob/main/harryaytug_resume_2024.pdf)
+[<span style="color:blue">Download my resume</span>] (https://github.com/haytug/haytug.github.io/blob/main/harryaytug_resume_2024.pdf)
 
 **Data Scientist @ Instabox, Sweden (May 2022 - Present)**
 - Led the development and deployment of machine learning forecasting models using Python, Docker, Kubernetes, Terraform, SQL,
