@@ -1,0 +1,589 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-bg: #ffffff;
+    --color-bg-alt: #f9fafb;
+    --color-border: #e5e7eb;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+/* Hero section */
+.hero {
+    padding: 160px 24px 80px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 4px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+}
+
+.hero-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section-alt {
+    background: var(--color-bg-alt);
+}
+
+.section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--color-text);
+}
+
+/* About section */
+.about-content p {
+    margin-bottom: 16px;
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.skill-tag {
+    background: white;
+    border: 1px solid var(--color-border);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--color-text);
+}
+
+/* Education */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.edu-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+.edu-degree {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.edu-school {
+    color: var(--color-text-light);
+    margin-bottom: 8px;
+}
+
+.edu-year {
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--color-border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    border: 2px solid white;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.timeline-content .company {
+    color: var(--color-text-light);
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+/* Publications */
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pub-item {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+.pub-item h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.pub-authors {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.pub-venue {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.pub-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pub-link:hover {
+    text-decoration: underline;
+}
+
+/* Software section */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.software-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.software-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.software-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+}
+
+.software-card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.software-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.software-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.software-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section */
+.contact-content {
+    text-align: center;
+}
+
+.contact-content>p {
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 12px 20px;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.contact-link:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.contact-link svg {
+    flex-shrink: 0;
+}
+
+/* Footer */
+.footer {
+    padding: 32px 0;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 24px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .timeline {
+        padding-left: 24px;
+    }
+
+    .timeline-item::before {
+        left: -28px;
+    }
+}
+
+
+/* News section */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    flex-wrap: wrap;
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+    min-width: 80px;
+}
+
+.news-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.news-tag-job {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.news-tag-paper {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.news-tag-package {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.news-tag-talk {
+    background: #ede9fe;
+    color: #5b21b6;
+}
+
+.news-text {
+    flex: 1;
+    color: var(--color-text);
+}
+
+
+/* View all link */
+.view-all {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.view-all a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.view-all a:hover {
+    text-decoration: underline;
+}
+
+/* Page content for subpages */
+.page-content {
+    padding: 120px 0 80px;
+    min-height: calc(100vh - 200px);
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--color-text);
+}
+
+.news-full .news-item {
+    padding: 20px 24px;
+}
+
+
+/* Publication type badges */
+.pub-type {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.pub-type-patent {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.pub-type-paper {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* Education tag for news */
+.news-tag-edu {
+    background: #e0e7ff;
+    color: #3730a3;
+}
