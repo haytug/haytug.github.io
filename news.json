@@ -1,0 +1,112 @@
+[
+    {
+        "date": "Jan 2026",
+        "tag": "paper",
+        "text": "Published on arXiv: <a href=\"https://arxiv.org/abs/2601.10555\" target=\"_blank\">causalfe: Causal Forests with Fixed Effects in Python</a> — methodology paper for the causalfe package"
+    },
+    {
+        "date": "Jan 2026",
+        "tag": "package",
+        "text": "Released <a href=\"https://github.com/haytug/causalfe\" target=\"_blank\">causalfe</a> — Python package for causal inference with fixed effects"
+    },
+    {
+        "date": "Sep 2025",
+        "tag": "job",
+        "text": "Joined Amazon Web Services as AI/ML Engineer"
+    },
+    {
+        "date": "Sep 2025",
+        "tag": "patent",
+        "text": "Patent granted: ML algorithm for matching parcels with dimensionally-constrained lockers (SE547438C2)"
+    },
+    {
+        "date": "Sep 2024",
+        "tag": "job",
+        "text": "Joined Scania as Lead Data Scientist"
+    },
+    {
+        "date": "May 2022",
+        "tag": "job",
+        "text": "Promoted to Data Scientist (Tech Lead) at Instabox"
+    },
+    {
+        "date": "Apr 2022",
+        "tag": "paper",
+        "text": "Published in Scientific Reports: Evaluation of a new transcutaneous bilirubinometer in newborn infants"
+    },
+    {
+        "date": "Jan 2022",
+        "tag": "job",
+        "text": "Joined Konjunkturinstitutet (National Institute of Economic Research) as Data Scientist"
+    },
+    {
+        "date": "Oct 2020",
+        "tag": "paper",
+        "text": "Published: Construction of the Fama-French-Carhart four factors model for the Swedish Stock Market"
+    },
+    {
+        "date": "Jun 2020",
+        "tag": "job",
+        "text": "Joined Instabox as Data Scientist"
+    },
+    {
+        "date": "Oct 2018",
+        "tag": "paper",
+        "text": "Published in ESC Heart Failure: Impact of an interatrial shunt device on survival and heart failure hospitalization"
+    },
+    {
+        "date": "Aug 2018",
+        "tag": "paper",
+        "text": "Published in Millennial Asia: What Can We Learn from Global and Regional Rankings of Countries?"
+    },
+    {
+        "date": "Apr 2018",
+        "tag": "job",
+        "text": "Joined Swedish House of Finance as Senior Data and Research Analyst"
+    },
+    {
+        "date": "Sep 2017",
+        "tag": "paper",
+        "text": "Published in Int. Review of Economics and Finance: Does the Reserve Options Mechanism Really Decrease Exchange Rate Volatility?"
+    },
+    {
+        "date": "Mar 2017",
+        "tag": "job",
+        "text": "Joined Synergus as Data Scientist — moved to Stockholm, Sweden"
+    },
+    {
+        "date": "Oct 2016",
+        "tag": "paper",
+        "text": "Published in JCMS: Twenty years of the EU-Turkey Customs Union: A synthetic control method analysis"
+    },
+    {
+        "date": "Jul 2016",
+        "tag": "job",
+        "text": "Joined Gulf Monetary Council as Economist in Riyadh, Saudi Arabia"
+    },
+    {
+        "date": "Sep 2015",
+        "tag": "job",
+        "text": "Joined Bahrain Institute of Banking and Finance as Senior Lecturer"
+    },
+    {
+        "date": "Dec 2013",
+        "tag": "edu",
+        "text": "Completed Ph.D. in Economics from UC Santa Cruz"
+    },
+    {
+        "date": "Sep 2013",
+        "tag": "job",
+        "text": "Joined Central Bank of Turkey as Economist"
+    },
+    {
+        "date": "Jun 2010",
+        "tag": "edu",
+        "text": "Completed M.A. in Economics from UC Santa Cruz"
+    },
+    {
+        "date": "Jun 2007",
+        "tag": "edu",
+        "text": "Completed B.Sc. in Economics from Marmara University, Istanbul"
+    }
+]

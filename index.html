@@ -80,7 +80,7 @@
             <img src="assets/img/23499346.jpeg" alt="Harry Aytug" class="profile-img">
             <h1>Harry Aytug</h1>
             <p class="tagline">AI/ML Engineer at Amazon Web Services</p>
-            <p class="subtitle">Building ML systems at scale · Causal inference · Open-source tools</p>
+            <p class="subtitle">Gen AI & Agentic Systems · ML at scale · Research · Open-source</p>
             <div class="hero-links">
                 <a href="Harry_Aytug_resume_2026.pdf" class="btn btn-primary" target="_blank">View Resume</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -122,30 +122,34 @@
         <section id="news" class="section section-alt">
             <div class="container">
                 <h2>News</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <span class="news-date">Jan 2026</span>
-                        <span class="news-tag news-tag-package">Package</span>
-                        <span class="news-text">Released <a href="https://github.com/haytug/causalfe"
-                                target="_blank">causalfe</a> — Python package for causal inference with fixed
-                            effects</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">Sep 2025</span>
-                        <span class="news-tag news-tag-job">Job</span>
-                        <span class="news-text">Joined Amazon Web Services as AI/ML Engineer</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">Sep 2024</span>
-                        <span class="news-tag news-tag-job">Job</span>
-                        <span class="news-text">Joined Scania as Lead Data Scientist</span>
-                    </div>
+                <div class="news-list" id="news-list-home">
+                    <!-- Loaded dynamically from news.json -->
                 </div>
                 <div class="view-all">
                     <a href="news.html">View all updates →</a>
                 </div>
             </div>
         </section>
+        <script>
+            (function () {
+                const tagLabels = { paper: 'Paper', package: 'Package', job: 'Job', patent: 'Patent', edu: 'Education' };
+                fetch('news.json')
+                    .then(r => r.json())
+                    .then(news => {
+                        const container = document.getElementById('news-list-home');
+                        news.slice(0, 4).forEach(item => {
+                            const div = document.createElement('div');
+                            div.className = 'news-item';
+                            div.innerHTML = `
+                                <span class="news-date">${item.date}</span>
+                                <span class="news-tag news-tag-${item.tag}">${tagLabels[item.tag] || item.tag}</span>
+                                <span class="news-text">${item.text}</span>
+                            `;
+                            container.appendChild(div);
+                        });
+                    });
+            })();
+        </script>
 
         <section id="publications" class="section section-alt">
             <div class="container">
